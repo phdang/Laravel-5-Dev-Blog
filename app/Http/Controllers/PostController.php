@@ -23,6 +23,7 @@
       $post->body = $request['body'];
       $message = 'There was an error!';
       if ($request->user()->posts()->save($post)) {
+
           $message = 'Post successfully created!';
       }
 
